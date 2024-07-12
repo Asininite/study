@@ -1,0 +1,19 @@
+#add two numbers
+echo "Enter two numbers a and b"
+read a b
+
+s='expr $a + $b'
+echo "Sum1=$s"
+
+s=$[$a + $b]
+echo "Sum2=$s"
+
+((s=a+b))
+echo "Sum3=$s"
+
+let s=$a+$b
+echo "Sum4=$s"
+
+let s=a+b
+echo "Sum5=$s"
+
